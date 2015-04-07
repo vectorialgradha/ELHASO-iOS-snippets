@@ -45,10 +45,7 @@
 			rect.size.width, rect.size.height);
 	}
 
-	if (UIGraphicsBeginImageContextWithOptions)
-		UIGraphicsBeginImageContextWithOptions(size, NO, 0);
-	else
-		UIGraphicsBeginImageContext(size);
+	UIGraphicsBeginImageContextWithOptions(size, NO, 0);
 
 	CGContextRef c = UIGraphicsGetCurrentContext();
 	CGContextClearRect(c, rect);
